@@ -1,0 +1,7 @@
+{% extends 'layouts/base.twig' %}
+
+{% block content %}
+    {% for user in users %}
+        <h3>{{ user.fullName() }} ({{ user.getFormattedBalance() }})</h3>
+    {% endfor %}
+{% endblock %}
